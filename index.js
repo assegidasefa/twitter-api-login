@@ -24,6 +24,14 @@ app.use(
   }),
 )
 
+app.get("/", (req, res) => {
+  res.json({
+    status: "OK",
+    message: "Twitter Auth API is running",
+    version: "1.0.0"
+  });
+});
+
 // Routes
 app.use("/api/auth", authRoutes)
 app.use("/api/tweets", tweetRoutes)
