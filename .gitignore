@@ -1,0 +1,77 @@
+# .gitignore
+
+# Common
+node_modules/
+dist/
+build/
+.vscode/
+.DS_Store
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.cache/
+.env.local
+.env.development
+.env.test
+.env.production
+.idea/
+
+# Dependencies
+jspm_packages/
+.npm
+.yarn-integrity
+pnpm-lock.yaml
+
+# Testing
+coverage/
+.nyc_output/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode/
+.idea/
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local development
+*.db
+*.sqlite
+*.sqlite3
+
+# Vite
+.vite/
+
+# SSL certificates
+*.pem
+*.crt
+*.key
+
+# Local Netlify folder
+.netlify
+
+# Optional - Include if using TypeScript
+*.tsbuildinfo
+
+# Optional - Include if using Jest
+jest-results.json
+
+# Optional - Include if using ESLint
+.eslintcache
+
+# Optional - Include if using Cypress
+cypress/screenshots/
+cypress/videos/
