@@ -56,7 +56,7 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-app.use("/api/auth", authRoutes)
+app.use("api/auth", authRoutes)
 app.use("api/tweets", tweetRoutes)
 
 // Error handling middleware
