@@ -24,9 +24,13 @@ app.use(cookieParser())
 //   }),
 // )
 
+const frontendUrl = process.env.FRONTEND_URL || 'https://frontend-tweets.vercel.app';
+const normalizedUrl = frontendUrl.endsWith('/') ? frontendUrl.slice(0, -1) : frontendUrl;
+
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    // origin: process.env.FRONTEND_URL,
+    origin: [normalizedUrl, frontendUrl],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: [
